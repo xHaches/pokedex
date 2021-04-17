@@ -10,7 +10,15 @@
     <mat-nav-list>
       <a routerLink="./" mat-list-item (click)="sidenav.toggle()">
         <mat-icon mat-list-icon>android</mat-icon>
+        <span class="spacer"></span>
         <span>Listado de pokémon</span>
+      </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a routerLink="./profile" mat-list-item (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>account_circle</mat-icon>
+        <span class="spacer"></span>
+        <span>Perfil</span>
       </a>
     </mat-nav-list>
   </mat-sidenav>

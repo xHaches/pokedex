@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1618639794939,
+  "timestamp": 1618642490157,
   "index": "https://xhaches.github.io/pokedex/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://xhaches.github.io/pokedex/4.188b8b93ab5369827e22.js",
+        "https://xhaches.github.io/pokedex/1.82676e954073d338af83.js",
+        "https://xhaches.github.io/pokedex/5.4d38275f10ee24d76f36.js",
+        "https://xhaches.github.io/pokedex/6.9222f3f16682893ab236.js",
         "https://xhaches.github.io/pokedex/favicon.ico",
         "https://xhaches.github.io/pokedex/index.html",
-        "https://xhaches.github.io/pokedex/main.efd0153d1bb024b637b3.js",
+        "https://xhaches.github.io/pokedex/main.af8975b0561e6e4f00df.js",
         "https://xhaches.github.io/pokedex/manifest.webmanifest",
-        "https://xhaches.github.io/pokedex/polyfills.8c151b8375e767ff858f.js",
-        "https://xhaches.github.io/pokedex/runtime.0ee37652701cd5e83820.js",
+        "https://xhaches.github.io/pokedex/polyfills.7a965888daba3fbc4385.js",
+        "https://xhaches.github.io/pokedex/runtime.ea966be0b3a3f521a499.js",
         "https://xhaches.github.io/pokedex/styles.8d77802ad076e7bd30f0.css"
       ],
       "patterns": []
@@ -44,7 +46,9 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://xhaches.github.io/pokedex/4.188b8b93ab5369827e22.js": "2da11abba891402d134771c6d442a7b524c009b8",
+    "https://xhaches.github.io/pokedex/1.82676e954073d338af83.js": "41bf980fcf866a4e9d602381cac576937cbd4140",
+    "https://xhaches.github.io/pokedex/5.4d38275f10ee24d76f36.js": "c12a13bc60567405d646fac7912dc42018bdbe53",
+    "https://xhaches.github.io/pokedex/6.9222f3f16682893ab236.js": "815dabaee66ee871955a241f46715f26e9395386",
     "https://xhaches.github.io/pokedex/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "https://xhaches.github.io/pokedex/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "https://xhaches.github.io/pokedex/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -54,11 +58,11 @@
     "https://xhaches.github.io/pokedex/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://xhaches.github.io/pokedex/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://xhaches.github.io/pokedex/favicon.ico": "93e4768c718e18d08e0b8cc664f9942f2f9d888e",
-    "https://xhaches.github.io/pokedex/index.html": "e3f0b185249b943337c52055508639665234af73",
-    "https://xhaches.github.io/pokedex/main.efd0153d1bb024b637b3.js": "4a27540bda2c683fd230a71b1cfdea1bfc0d39a9",
+    "https://xhaches.github.io/pokedex/index.html": "24e2a0467da70f5b5ad8315db5cc5cf11daad8fc",
+    "https://xhaches.github.io/pokedex/main.af8975b0561e6e4f00df.js": "8ba247d4fee3e8b29050563645538241bb8c37c8",
     "https://xhaches.github.io/pokedex/manifest.webmanifest": "2b3cb9698d8f8a7914f26f5388087dd00d870ac9",
-    "https://xhaches.github.io/pokedex/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
-    "https://xhaches.github.io/pokedex/runtime.0ee37652701cd5e83820.js": "53de26611dbe8415a07e90ade524773cf2a3c208",
+    "https://xhaches.github.io/pokedex/polyfills.7a965888daba3fbc4385.js": "b6380ed034569010e4ec859b66fbc7c7132365a3",
+    "https://xhaches.github.io/pokedex/runtime.ea966be0b3a3f521a499.js": "b4c2194a001bd9c72026cb834cd76bb856d2a3a4",
     "https://xhaches.github.io/pokedex/styles.8d77802ad076e7bd30f0.css": "2970d95ed9a40bc9560a36a2b6478619029b3dfa"
   },
   "navigationUrls": [
