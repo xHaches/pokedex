@@ -1,8 +1,8 @@
 export interface Pokemon {
     name: string;
-    url: string;
-    id?: string;
-    sprite?: string;
+    url?: string;
+    position: number;
+    image?: string;
 }
 
 export interface Pokedetails {

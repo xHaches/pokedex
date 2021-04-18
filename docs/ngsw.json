@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1618642490157,
-  "index": "https://xhaches.github.io/pokedex/index.html",
+  "timestamp": 1618769472626,
+  "index": "/pokedex/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,16 +11,16 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://xhaches.github.io/pokedex/1.82676e954073d338af83.js",
-        "https://xhaches.github.io/pokedex/5.4d38275f10ee24d76f36.js",
-        "https://xhaches.github.io/pokedex/6.9222f3f16682893ab236.js",
-        "https://xhaches.github.io/pokedex/favicon.ico",
-        "https://xhaches.github.io/pokedex/index.html",
-        "https://xhaches.github.io/pokedex/main.af8975b0561e6e4f00df.js",
-        "https://xhaches.github.io/pokedex/manifest.webmanifest",
-        "https://xhaches.github.io/pokedex/polyfills.7a965888daba3fbc4385.js",
-        "https://xhaches.github.io/pokedex/runtime.ea966be0b3a3f521a499.js",
-        "https://xhaches.github.io/pokedex/styles.8d77802ad076e7bd30f0.css"
+        "/pokedex/1.c67f143efd42c6b5bba0.js",
+        "/pokedex/5.8c701d3cb3268068e6b7.js",
+        "/pokedex/6.737dcbbabb8674b2788f.js",
+        "/pokedex/favicon.ico",
+        "/pokedex/index.html",
+        "/pokedex/main.783df9bfaf4c7a0b4cf1.js",
+        "/pokedex/manifest.webmanifest",
+        "/pokedex/polyfills.7a965888daba3fbc4385.js",
+        "/pokedex/runtime.7b134321b8cdeb7d64d3.js",
+        "/pokedex/styles.31f0fdd928defa00800c.css"
       ],
       "patterns": []
     },
@@ -32,38 +32,40 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://xhaches.github.io/pokedex/assets/icons/icon-128x128.png",
-        "https://xhaches.github.io/pokedex/assets/icons/icon-144x144.png",
-        "https://xhaches.github.io/pokedex/assets/icons/icon-152x152.png",
-        "https://xhaches.github.io/pokedex/assets/icons/icon-192x192.png",
-        "https://xhaches.github.io/pokedex/assets/icons/icon-384x384.png",
-        "https://xhaches.github.io/pokedex/assets/icons/icon-512x512.png",
-        "https://xhaches.github.io/pokedex/assets/icons/icon-72x72.png",
-        "https://xhaches.github.io/pokedex/assets/icons/icon-96x96.png"
+        "/pokedex/assets/icons/icon-128x128.png",
+        "/pokedex/assets/icons/icon-144x144.png",
+        "/pokedex/assets/icons/icon-152x152.png",
+        "/pokedex/assets/icons/icon-192x192.png",
+        "/pokedex/assets/icons/icon-384x384.png",
+        "/pokedex/assets/icons/icon-512x512.png",
+        "/pokedex/assets/icons/icon-72x72.png",
+        "/pokedex/assets/icons/icon-96x96.png",
+        "/pokedex/assets/styles/variables.scss"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://xhaches.github.io/pokedex/1.82676e954073d338af83.js": "41bf980fcf866a4e9d602381cac576937cbd4140",
-    "https://xhaches.github.io/pokedex/5.4d38275f10ee24d76f36.js": "c12a13bc60567405d646fac7912dc42018bdbe53",
-    "https://xhaches.github.io/pokedex/6.9222f3f16682893ab236.js": "815dabaee66ee871955a241f46715f26e9395386",
-    "https://xhaches.github.io/pokedex/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "https://xhaches.github.io/pokedex/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "https://xhaches.github.io/pokedex/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "https://xhaches.github.io/pokedex/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "https://xhaches.github.io/pokedex/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "https://xhaches.github.io/pokedex/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "https://xhaches.github.io/pokedex/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "https://xhaches.github.io/pokedex/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "https://xhaches.github.io/pokedex/favicon.ico": "93e4768c718e18d08e0b8cc664f9942f2f9d888e",
-    "https://xhaches.github.io/pokedex/index.html": "24e2a0467da70f5b5ad8315db5cc5cf11daad8fc",
-    "https://xhaches.github.io/pokedex/main.af8975b0561e6e4f00df.js": "8ba247d4fee3e8b29050563645538241bb8c37c8",
-    "https://xhaches.github.io/pokedex/manifest.webmanifest": "2b3cb9698d8f8a7914f26f5388087dd00d870ac9",
-    "https://xhaches.github.io/pokedex/polyfills.7a965888daba3fbc4385.js": "b6380ed034569010e4ec859b66fbc7c7132365a3",
-    "https://xhaches.github.io/pokedex/runtime.ea966be0b3a3f521a499.js": "b4c2194a001bd9c72026cb834cd76bb856d2a3a4",
-    "https://xhaches.github.io/pokedex/styles.8d77802ad076e7bd30f0.css": "2970d95ed9a40bc9560a36a2b6478619029b3dfa"
+    "/pokedex/1.c67f143efd42c6b5bba0.js": "7746e408e47d25255571beafe3468dd951676c4b",
+    "/pokedex/5.8c701d3cb3268068e6b7.js": "35de9edb7d9c0998764843f1da10189db49eefdb",
+    "/pokedex/6.737dcbbabb8674b2788f.js": "bc391040873fc3cfcd098f52dfc09d25c58ef3fb",
+    "/pokedex/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/pokedex/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/pokedex/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/pokedex/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/pokedex/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/pokedex/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/pokedex/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/pokedex/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/pokedex/assets/styles/variables.scss": "408865f2bc39752d43d644aab4992e316721c10d",
+    "/pokedex/favicon.ico": "93e4768c718e18d08e0b8cc664f9942f2f9d888e",
+    "/pokedex/index.html": "f0d03a7310ab39acf1dbc3571e77c399afba3850",
+    "/pokedex/main.783df9bfaf4c7a0b4cf1.js": "0ef32b22b1acd01852368c418f790f658b9ccdbc",
+    "/pokedex/manifest.webmanifest": "2b3cb9698d8f8a7914f26f5388087dd00d870ac9",
+    "/pokedex/polyfills.7a965888daba3fbc4385.js": "b6380ed034569010e4ec859b66fbc7c7132365a3",
+    "/pokedex/runtime.7b134321b8cdeb7d64d3.js": "3e8f246d5c29f24eb191af031550054170a00574",
+    "/pokedex/styles.31f0fdd928defa00800c.css": "74b7c003dd64b7f745ed92a0c120a980ad24a4e8"
   },
   "navigationUrls": [
     {

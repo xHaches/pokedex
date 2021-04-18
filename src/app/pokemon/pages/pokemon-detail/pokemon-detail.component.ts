@@ -13,6 +13,8 @@ import { Subscription } from 'rxjs';
 export class PokemonDetailComponent implements OnInit, OnDestroy {
 
   pokemon!: Pokedetails;
+  pokemonImg = '';
+  pokemonType = '';
 
   routeSubscription!: Subscription;
 
@@ -22,9 +24,26 @@ export class PokemonDetailComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    this.routeSubscription = this.activatedRoute.params.pipe(
-      switchMap(({ id }) => (this.pokemonService.getPokemonById(id)))
-    ).subscribe((pokemon: Pokedetails) => this.pokemon = pokemon);
+    this.routeSubscription = this.activatedRoute.params.subscribe(
+      params => {
+        this.getPokemon(params['id']);
+      }
+    )
+  }
+
+
+  getPokemon(id: number) {
+    this.pokemonService.getPokemons(id).subscribe(
+      res => {
+        console.log(res);
+        this.pokemon = res;
+        this.pokemonImg = this.pokemon.sprites.front_default;
+        this.pokemonType = res.types[0].type.name;
+      },
+      err => {
+        console.log(err);
+      }
+    )
   }
 
   ngOnDestroy() {

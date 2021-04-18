@@ -1,9 +1,12 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-
-import { catchError, pluck, tap, switchMap } from 'rxjs/operators';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Pokemon } from '../../../interfaces/pokemon.interface';
 import { PokemonService } from '../../services/pokemon.service';
-import { Pokemon, Pokedetails } from '../../../interfaces/pokemon.interface';
 import { Subscription } from 'rxjs';
+import { MatTableDataSource } from '@angular/material/table';
+import { ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-pokemons',
@@ -12,52 +15,67 @@ import { Subscription } from 'rxjs';
 })
 export class PokemonsComponent implements OnInit, OnDestroy {
 
+  displayedColumns: string[] = ['position', 'image', 'name'];
   pokemons: Pokemon[] = [];
-  pokeSubscription!: Subscription;
-  subscriptions = new Subscription();
+  dataSource = new MatTableDataSource<any>(this.pokemons);
+  pokemonsSubscription!: Subscription;
 
-  get pokemonsDetails() {
-    return this.pokemonService.getPokemonsDetails();
-  }
-
-  offset: number = 0;
-  limit: number = 20;
+  @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
 
   constructor(
     private pokemonService: PokemonService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
-    if (this.pokemonsDetails.length > 0) {
-      return;
-    }
     this.loadPokemons();
   }
 
-  loadPokemons() {
-    this.pokeSubscription = this.pokemonService.getPokemons(this.offset, this.limit).pipe(
-      pluck('results'),
-      catchError<Pokemon[], []>(err => []),
-      tap((pokemons) => this.pokemons = pokemons),
-      tap((pokemons: Pokemon[]) => pokemons.forEach((pokemon: Pokemon, index: number) => {
-        const pokemonId = pokemon.url.slice(pokemon.url.length - 4, -1);
-        this.pokemons[index].id = pokemonId.replace(/[A-Za-z]*\//, '');
-      })
-      ),
-      tap((pokemons: Pokemon[]) => pokemons.forEach((pokemon, index) => {
-        this.subscriptions.add(
-          this.pokemonService.getPokemonById(pokemon.id!).subscribe((pokemonLoaded: Pokedetails) => {
-            this.pokemonService.addPokemonDetails(pokemonLoaded);
-          }))
-      }))
-    ).subscribe();
+  search(e: Event) {
+    this.loadPokemons();
   }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+
+  loadPokemons() {
+    let pokemonData: Pokemon;
+
+    for (let i = 1; i <= 150; i++) {
+      this.pokemonsSubscription = this.pokemonService.getPokemons(i).subscribe(
+        res => {
+          pokemonData = {
+            position: i,
+            image: res.sprites.front_default,
+            name: res.name
+          };
+
+          this.pokemons.push(pokemonData);
+          this.dataSource = new MatTableDataSource<any>(this.pokemons);
+          this.dataSource.paginator = this.paginator;
+        },
+        err => {
+          console.log(err);
+        }
+      );
+    }
+  }
+
+  getRow(row: any) {
+    console.log(row);
+    this.router.navigateByUrl(`list/detail/${row.position}`)
+  }
+
 
   ngOnDestroy(): void {
-    this.pokeSubscription?.unsubscribe();
-    this.subscriptions?.unsubscribe();
+    this.pokemonsSubscription.unsubscribe();
   }
-
 }
 
 
